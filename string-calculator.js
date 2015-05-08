@@ -1,33 +1,37 @@
 var expect = require('chai').expect;
 
 function toNumber(word){
-  if ( word === 'zero' ) {
+  if( word === 'zero' ){
     return 0;
   }
-  if ( word === 'one' ) {
+  if( word === 'one' ){
     return 1;
   }
-  if ( word === 'two' ) {
+  if( word === 'two' ){
     return 2;
   }
-  if ( word === 'three' ) {
+  if( word === 'three' ){
     return 3;
   }
-  if ( word === 'four' ) {
+  if( word === 'four' ){
     return 4;
   }
-  if ( word === 'five' ) {
+  if( word === 'five' ){
     return 5;
   }
-  if ( word === 'six' ) {
+  if( word === 'six' ){
     return 6;
   }
-  if ( word === 'seven' ) {
+  if( word === 'seven' ){
     return 7;
   }
-  if ( word === 'eight' ) {
+  if( word === 'eight' ){
     return 8;
   }
+  if( word === 'nine' ){
+    return 9;
+  }
+}
 
 function plus(x, y){
   var a = toNumber(x);
@@ -35,7 +39,7 @@ function plus(x, y){
   return a + b;
 }
 
-expect(toNumber).to.exist
+expect(toNumber).to.exist;
 expect(toNumber('zero')).to.equal(0);
 expect(toNumber('one')).to.equal(1);
 expect(toNumber('two')).to.equal(2);
