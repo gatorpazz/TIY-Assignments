@@ -39,6 +39,12 @@ function plus(x, y){
   return a + b;
 }
 
+function minus(x, y){
+  var a = toNumber(x);
+  var b = toNumber(y);
+  return a - b
+}
+
 expect(toNumber).to.exist;
 expect(toNumber('zero')).to.equal(0);
 expect(toNumber('one')).to.equal(1);
@@ -160,3 +166,5 @@ expect(plus('nine', 'six')).to.equal(15);
 expect(plus('nine', 'seven')).to.equal(16);
 expect(plus('nine', 'eight')).to.equal(17);
 expect(plus('nine', 'nine')).to.equal(18);
+
+expect(minus('eight', 'seven')).to.equal(1);
