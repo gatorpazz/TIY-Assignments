@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-function toEnglish(word){
+function toNumber(word){
   if ( word === 'zero' ) {
     return 0;
   }
@@ -30,7 +30,19 @@ function toEnglish(word){
   }
 
 function plus(x, y){
-  var a = toEnglish(x);
-  var b = toEnglish(y);
+  var a = toNumber(x);
+  var b = toNumber(y);
   return a + b;
 }
+
+expect(toNumber).to.exist
+expect(toNumber('zero')).to.equal(0);
+expect(toNumber('one')).to.equal(1);
+expect(toNumber('two')).to.equal(2);
+expect(toNumber('three')).to.equal(3);
+expect(toNumber('four')).to.equal(4);
+expect(toNumber('five')).to.equal(5);
+expect(toNumber('six')).to.equal(6);
+expect(toNumber('seven')).to.equal(7);
+expect(toNumber('eight')).to.equal(8);
+expect(toNumber('nine')).to.equal(9);
