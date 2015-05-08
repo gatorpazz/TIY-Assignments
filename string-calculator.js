@@ -42,14 +42,22 @@ function plus(x, y){
 function minus(x, y){
   var a = toNumber(x);
   var b = toNumber(y);
-  return a - b
+  return a - b;
 }
 
 function multiply(x,y){
   var a = toNumber(x);
   var b = toNumber(y);
-  return a * b
+  return a * b;
 }
+
+function divide(x,y){
+  var a = toNumber(x);
+  var b = toNumber(y);
+  return a / b;
+}
+
+console.log(divide('nine', 'eight'));
 
 expect(toNumber).to.exist;
 expect(toNumber('zero')).to.equal(0);
@@ -178,3 +186,5 @@ expect(minus).to.exist;
 expect(minus('eight', 'seven')).to.equal(1);
 expect(multiply).to.exist;
 expect(multiply('eight', 'eight')).to.equal(64);
+expect(divide).to.exist;
+expect(divide('nine','eight')).to.equal(1.125);
