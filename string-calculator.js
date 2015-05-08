@@ -45,6 +45,12 @@ function minus(x, y){
   return a - b
 }
 
+function multiply(x,y){
+  var a = toNumber(x);
+  var b = toNumber(y);
+  return a * b
+}
+
 expect(toNumber).to.exist;
 expect(toNumber('zero')).to.equal(0);
 expect(toNumber('one')).to.equal(1);
@@ -57,6 +63,7 @@ expect(toNumber('seven')).to.equal(7);
 expect(toNumber('eight')).to.equal(8);
 expect(toNumber('nine')).to.equal(9);
 
+expect(plus).to.exist;
 expect(plus('zero', 'zero')).to.equal(0);
 expect(plus('zero', 'one')).to.equal(1);
 expect(plus('zero', 'two')).to.equal(2);
@@ -167,4 +174,7 @@ expect(plus('nine', 'seven')).to.equal(16);
 expect(plus('nine', 'eight')).to.equal(17);
 expect(plus('nine', 'nine')).to.equal(18);
 
+expect(minus).to.exist;
 expect(minus('eight', 'seven')).to.equal(1);
+expect(multiply).to.exist;
+expect(multiply('eight', 'eight')).to.equal(64);
