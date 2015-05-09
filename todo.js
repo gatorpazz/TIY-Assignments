@@ -18,6 +18,10 @@ function addTaskToList(task, list){
   return list.push(task);
 }
 
+//I can check a task off my list...
+function completeTask(task, list){
+  
+}
 expect(taskList.length).to.equal(0);
 addTaskToList("Remember the milk", taskList);
 expect(taskList[0]).to.equal("Remember the milk");
