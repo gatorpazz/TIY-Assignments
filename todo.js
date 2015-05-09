@@ -7,6 +7,7 @@ var taskList = [];
 
 // I can list my tasks...
 function listTasks(){
+  return taskList;
 }
 
 //I can add a task to my list...
