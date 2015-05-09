@@ -27,3 +27,5 @@ addTaskToList("Take out the trash", taskList);
 
 expect(listTasks).to.exist;
 expect(listTasks(taskList)).to.equal(taskList);
+
+expect(completeTask).to.exist;
