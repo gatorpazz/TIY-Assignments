@@ -36,3 +36,10 @@ expect(listTasks(taskList)).to.equal(taskList);
 expect(completeTask).to.exist;
 completeTask(1, taskList);
 expect(taskList[0]).to.equal("Remember the milk COMPLETE");
+
+var d;
+
+for(var a = 0; a < taskList.length; a++){
+  d += a + 1 + ') ' + taskList[a] + ' \n';
+}
+console.log(d);
