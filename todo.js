@@ -20,8 +20,9 @@ function addTaskToList(task, list){
 
 //I can check a task off my list...
 function completeTask(task, list){
-
+  list[task - 1] += ' COMPLETE';
 }
+
 expect(taskList.length).to.equal(0);
 addTaskToList("Remember the milk", taskList);
 expect(taskList[0]).to.equal("Remember the milk");
@@ -33,4 +34,5 @@ expect(listTasks).to.exist;
 expect(listTasks(taskList)).to.equal(taskList);
 
 expect(completeTask).to.exist;
-expect(completeTask(1, taskList)).to.equal("Task 1 Completed!")
+completeTask(1, taskList);
+expect(taskList[0]).to.equal("Remember the milk COMPLETE");
