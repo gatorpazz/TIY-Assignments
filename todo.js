@@ -31,7 +31,7 @@ function completeTask(task, list){
 
 //I can delete a task off my list...
 function deleteTask(task, list){
-
+  list.splice(task - 1, 1);
 }
 
 expect(taskList.length).to.equal(0);
