@@ -30,6 +30,9 @@ function completeTask(task, list){
 }
 
 //I can delete a task off my list...
+function deleteTask(task, list){
+  
+}
 
 expect(taskList.length).to.equal(0);
 addTaskToList("Remember the milk", taskList);
