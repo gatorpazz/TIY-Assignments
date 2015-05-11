@@ -26,12 +26,12 @@ function addTaskToList(task, list){
 
 //I can check a task off my list...
 function completeTask(task, list){
-  list[task - 1] += ' COMPLETE';
+  return list[task - 1] += ' COMPLETE';
 }
 
 //I can delete a task off my list...
 function deleteTask(task, list){
-  list.splice(task - 1, 1);
+  return list.splice(task - 1, 1);
 }
 
 expect(taskList.length).to.equal(0);
