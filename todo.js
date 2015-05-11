@@ -4,16 +4,16 @@
 var expect = require('chai').expect;
 
 var taskList = [];
-var d;
+var placeholder;
 
 // I can list my tasks...
 function listTasks(list){
-  var e = '';
-  for(var a = 0; a < list.length; a++){
-    d = a + 1 + ') ' + list[a] + ' \n';
-    var e = e + ' \n' + d;
+  var prettyList = '';
+  for(var index = 0; index < list.length; index++){
+    placeholder = index + 1 + ') ' + list[index] + ' \n';
+    var prettyList = prettyList + ' \n' + placeholder;
   }
-  return e;
+  return prettyList;
 }
 
 //I can add a task to my list...
@@ -51,3 +51,5 @@ expect(deleteTask).to.exist;
 deleteTask(1, taskList);
 expect(taskList.length).to.equal(1);
 expect(taskList[0]).to.equal("Take out the trash");
+
+console.log(listTasks(taskList));

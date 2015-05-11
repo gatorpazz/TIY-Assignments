@@ -2,11 +2,10 @@ var expect = require('chai').expect;
 
 function toNumber(word){
   var words = ['zero','one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   //Figure out how to equate numbers in this function
   for(var a = 0; a < 10; a++){
     if( word === words[a]){
-      return numbers [a];
+      return a;
     }
   }
 }
