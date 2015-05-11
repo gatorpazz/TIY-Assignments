@@ -31,7 +31,7 @@ function completeTask(task, list){
 
 //I can delete a task off my list...
 function deleteTask(task, list){
-  
+
 }
 
 expect(taskList.length).to.equal(0);
@@ -48,3 +48,6 @@ completeTask(1, taskList);
 expect(taskList[0]).to.equal("Remember the milk COMPLETE");
 
 expect(deleteTask).to.exist;
+deleteTask(1, taskList);
+expect(taskList.length).to.equal(1);
+expect(taskList[0]).to.equal("Take out the trash");
