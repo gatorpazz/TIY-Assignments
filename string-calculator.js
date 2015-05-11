@@ -1,35 +1,13 @@
 var expect = require('chai').expect;
 
 function toNumber(word){
-  if( word === 'zero' ){
-    return 0;
-  }
-  if( word === 'one' ){
-    return 1;
-  }
-  if( word === 'two' ){
-    return 2;
-  }
-  if( word === 'three' ){
-    return 3;
-  }
-  if( word === 'four' ){
-    return 4;
-  }
-  if( word === 'five' ){
-    return 5;
-  }
-  if( word === 'six' ){
-    return 6;
-  }
-  if( word === 'seven' ){
-    return 7;
-  }
-  if( word === 'eight' ){
-    return 8;
-  }
-  if( word === 'nine' ){
-    return 9;
+  var words = ['zero','one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  //Figure out how to equate numbers in this function
+  for(var a = 0; a < 10; a++){
+    if( word === words[a]){
+      return numbers [a];
+    }
   }
 }
 
@@ -52,9 +30,13 @@ function multiply(x,y){
 }
 
 function divide(x,y){
-  var a = toNumber(x);
-  var b = toNumber(y);
-  return a / b;
+  if (y === "zero"){
+    return "You can't divide by zero";
+  }
+  if (x === "zero"){
+    return 0;
+  }
+  return toNumber(x) / toNumber(y);
 }
 
 console.log(divide('nine', 'eight'));
@@ -187,4 +169,6 @@ expect(minus('eight', 'seven')).to.equal(1);
 expect(multiply).to.exist;
 expect(multiply('eight', 'eight')).to.equal(64);
 expect(divide).to.exist;
+expect(divide('five','zero')).to.equal("You can't divide by zero");
+expect(divide('zero','five')).to.equal(0);
 expect(divide('nine','eight')).to.equal(1.125);
