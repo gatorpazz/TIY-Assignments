@@ -12,21 +12,15 @@ function toNumber(word){
 }
 
 function plus(x, y){
-  var a = toNumber(x);
-  var b = toNumber(y);
-  return a + b;
+  return toNumber(x) + toNumber(y);
 }
 
 function minus(x, y){
-  var a = toNumber(x);
-  var b = toNumber(y);
-  return a - b;
+  return toNumber(x) - toNumber(y);
 }
 
 function multiply(x,y){
-  var a = toNumber(x);
-  var b = toNumber(y);
-  return a * b;
+  return toNumber(x) * toNumber(y);
 }
 
 function divide(x,y){
