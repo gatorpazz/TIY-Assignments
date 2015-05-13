@@ -8,8 +8,8 @@ _.forEach(tabElements, function(element, index, tabElements){
     });
 });
 
-_.forEach(tabElements, function(element, index, panelElements){
-    element.addEventListener('click', function(){
-      element.classList.toggle('content-current');
-    });
-});
+//_.forEach(tabElements, function(element, index, panelElements){
+//    element.addEventListener('click', function(){
+//      element.classList.toggle('content-current');
+//    });
+//});

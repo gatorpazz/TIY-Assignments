@@ -1,7 +1,7 @@
 // alert("It's alive!");
 document.head.parentElement.className = "js";
 
-var elements = document.querySelectorAll('h3');
+var elements = document.querySelectorAll('.cbp-nttrigger');
 
 _.forEach(elements, function(element, index, elements){
     element.addEventListener('click', function(){
