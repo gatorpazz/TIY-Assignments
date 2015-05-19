@@ -1,0 +1,20 @@
+{
+  "name": "NestedAccordion",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gatorpazz/TIY-Assignments",
+  "authors": [
+    "Michael Pascuzzi <gatorpazz@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "CCO",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.8.0"
+  }
+}
