@@ -15,6 +15,53 @@ h5 {
 .js .cbp-ntcontent {
   display: none
 }
+<<<<<<< HEAD:NestedAccordion/styles.css
 .cbp-ntopen > .cbp-ntcontent {
   display: block;
 }
+=======
+.cbp-ntaccordion > li > .cbp-nttrigger:hover:before {
+	content: "\35";
+	color: inherit;
+}
+.cbp-ntaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
+.no-js .cbp-ntaccordion > li > .cbp-nttrigger:before {
+	content: "\34";
+	color: inherit;
+}
+
+.cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	content: "\32";
+}
+.cbp-ntsubaccordion > li > .cbp-nttrigger:hover:before {
+	content: "\33";
+	color: inherit;
+}
+.cbp-ntsubaccordion > li.cbp-ntopen > .cbp-nttrigger:before,
+.no-js .cbp-ntsubaccordion > li > .cbp-nttrigger:before {
+	content: "\31";
+	color: inherit;
+}
+
+/* Initial height is zero */
+.cbp-ntaccordion .cbp-ntcontent {
+	height: 0;
+	overflow: hidden;
+}
+
+/* When open, set height to auto */
+.cbp-ntaccordion .cbp-ntopen > .cbp-ntcontent,
+.cbp-ntsubaccordion .cbp-ntopen > .cbp-ntcontent,
+.no-js .cbp-ntaccordion .cbp-ntcontent {
+	height: auto;
+}
+
+/* Example for media query */
+@media screen and (max-width: 32em) { 
+
+	.cbp-ntaccordion {
+		font-size: 70%;
+	}
+
+}
+>>>>>>> master:NestedAccordion/css/component.css
