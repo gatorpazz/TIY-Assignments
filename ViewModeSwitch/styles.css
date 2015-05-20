@@ -1,0 +1,16 @@
+.cbp-vm-switcher {
+	border: 3px solid cornflowerblue;
+}
+
+body {
+	color: cornflowerblue;
+	margin: 0px 70px 0px 70px;
+}
+
+div.cbp-vm-options {
+	border-bottom: 3px solid cornflowerblue;
+	text-align: right;
+	padding: 20px 20px 15px 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
