@@ -1,5 +1,6 @@
 body {
   color: gray;
+  cursor: url(dino.ico), default;
 }
 
 h3 {
@@ -42,7 +43,6 @@ ul {
 
 ul > .cbp-ntopen{
   list-style-image: url('guns5.png');
-  list-style-position: inside;
 }
 
 p {
