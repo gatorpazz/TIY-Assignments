@@ -4,16 +4,20 @@ body {
 
 h3 {
   font-family: 'Open Sans';
+  font-size: 1cm;
+  padding-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 h4 {
   text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.60cm;
   font-family: 'Monda';
 }
 
 h3, h4 {
   color: cornflowerblue;
-  font-size: 1cm;
   border-bottom: 1px solid lightgray;
 }
 
@@ -27,13 +31,21 @@ h5 {
 }
 
 .cbp-ntopen > .cbp-ntcontent{
-    display: block;
+  display: block;
 }
 
 ul {
-   list-style-image: url('guns4.png');
+  list-style-image: url('guns4.png');
+  list-style-position: inside;
+  margin-left: 30px;
 }
 
 ul > .cbp-ntopen{
   list-style-image: url('guns5.png');
+  list-style-position: inside;
+}
+
+p {
+  line-height: 30px;
+  font-size: 0.50cm;
 }
