@@ -10,5 +10,9 @@
   }
 
   $('img').attr('src', randoImage);
-  
+
+  var tabList = document.querySelector('nav');
+  var tabs = tabList.querySelectorAll('a')
+  _.for
+
 })(window);

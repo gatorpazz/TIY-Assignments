@@ -31,3 +31,21 @@ body {
 .mediabox img {
   width: 100%;
 }
+nav ul{
+  border-bottom: 1px solid cornflowerblue;
+  text-align: center;
+  margin: 5em 0 5em 0;
+  padding-bottom: 0.75em
+}
+nav li {
+	display: inline-block;
+	margin: 0 0.5em 0 0;
+}
+
+nav a {
+  padding: 0.5em 1em 0.5em 1em;
+  border: solid cornflowerblue;
+	border-width: 1px 1px 0 1px;
+  font-size: 20pt;
+  font-family: 'Josefin Sans';
+}
