@@ -1,15 +1,14 @@
-//alert("I work in the html");
-var tabElements = document.querySelectorAll('a');
-var panelElements = document.querySelectorAll('section');
+(function(window){
+  var BASE_URL = 'http:lorempixel.com/400/200/cats?';
 
-_.forEach(tabElements, function(element, index, tabElements){
-    element.addEventListener('click', function(){
-      element.parentElement.classList.toggle('tab-current');
-    });
-});
+  function rando(limit){
+    return Math.floor(Math.random() * limit);
+  }
 
-//_.forEach(tabElements, function(element, index, panelElements){
-//    element.addEventListener('click', function(){
-//      element.classList.toggle('content-current');
-//    });
-//});
+  function randoImage(){
+    return BASE_URL + '?' + rando(1000);
+  }
+
+  $('img').attr('src', randoImage);
+  
+})(window);
