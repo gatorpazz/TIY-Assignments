@@ -48,4 +48,6 @@ nav a {
 	border-width: 1px 1px 0 1px;
   font-size: 20pt;
   font-family: 'Josefin Sans';
+  text-decoration: none;
+  color: lightgray;
 }

@@ -15,4 +15,8 @@
   var tabs = tabList.querySelectorAll('a')
   _.for
 
+  $('a').click(function(){
+    $('section').removeClass('content-current')
+  });
+
 })(window);
