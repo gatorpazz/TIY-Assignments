@@ -44,10 +44,37 @@ nav li {
 
 nav a {
   padding: 0.5em 1em 0.5em 1em;
-  border: solid cornflowerblue;
+  border: solid lightgray;
 	border-width: 1px 1px 0 1px;
   font-size: 20pt;
   font-family: 'Josefin Sans';
   text-decoration: none;
   color: lightgray;
+}
+.tab-current {
+  border-width: 3px 1px 4px 1px;
+  padding-bottom: 0.4em;
+  border-top-color: cornflowerblue;
+  border-left-color: cornflowerblue;
+  border-right-color: cornflowerblue;
+  border-bottom-color: white;
+  color: cornflowerblue;
+}
+a:not(.tab-current):hover {
+  background-color: red;
+}
+a.tab1 span:before {
+  content: url(Weapons/bow.png);
+}
+a.tab2 span:before {
+  content: url(Weapons/gun.png);
+}
+a.tab3 span:before {
+  content: url(Weapons/lightning.png);
+}
+a.tab4 span:before {
+  content: url(Weapons/criminal.png);
+}
+a.tab5 span:before {
+  content: url(Weapons/missile.png);
 }
