@@ -22,7 +22,6 @@
 	border-bottom: none;
 }
 
-/* Currently visible */
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
 	position: relative; 
@@ -67,7 +66,7 @@
 }
 
 .cbp-qtrotator blockquote footer:before {
-	content: '? ';
+	content: '― ';
 }
 
 .cbp-qtrotator .cbp-qtcontent img {

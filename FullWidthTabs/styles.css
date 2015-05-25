@@ -52,6 +52,7 @@ nav a {
   color: lightgray;
 }
 .tab-current {
+  padding-top: 0.4em;
   border-width: 3px 1px 4px 1px;
   padding-bottom: 0.4em;
   border-top-color: cornflowerblue;
