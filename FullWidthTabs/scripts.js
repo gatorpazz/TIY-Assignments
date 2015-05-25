@@ -11,9 +11,8 @@
 
   $('img').attr('src', randoImage);
 
-  var tabList = document.querySelector('nav');
-  var tabs = tabList.querySelectorAll('a');
-
+  var $tabs = $('a[class^="tab"]');
+/*
   $('a.tab1').click(function(){
     $('section').removeClass('content-current');
     $('#section-1').addClass('content-current');
@@ -48,5 +47,11 @@
     $('a').removeClass('tab-current');
     $('a.tab5').addClass('tab-current');
   });
-
+*/
+$tabs.on('click', function() { //with help from stackoverflow
+    $('section').removeClass('content-current');
+    $($(this).attr('href')).addClass('content-current');
+    $('a').removeClass('tab-current');
+    $(this).addClass('tab-current');
+});
 })(window);
