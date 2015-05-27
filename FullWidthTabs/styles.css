@@ -79,3 +79,17 @@ a.tab4 span:before {
 a.tab5 span:before {
   content: url(Weapons/missile.png);
 }
+
+@media screen and (max-width: 800px){
+  .tabs nav ul li a > span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .tabs nav ul li a{
+    margin: 0;
+    width: 20%;
+    box-sizing: border-box;
+  }
+}
