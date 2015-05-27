@@ -95,8 +95,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*Put my CSS here*/
+.timeline article {
+  color: white;
+  background-color: #57C0F1;
+}
 
-
+.timeline li:nth-child(even) article {
+  color: white;
+  background-color: #3593CA;
+}
 
 
 
