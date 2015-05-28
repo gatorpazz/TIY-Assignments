@@ -97,7 +97,7 @@ textarea {
 
 /*Put my CSS here*/
 main {
-  margin: 0 10em 0 10em;
+  margin: 3em 7em 0 7em;
 }
 
 .timeline {
@@ -118,7 +118,7 @@ main {
   bottom: 0;
   background-color: #afdcf8;
   position: absolute;
-  left: 30%;
+  left: 20%;
   font-size: 200%;
 }
 
@@ -132,9 +132,24 @@ main {
   display: inline-block;
   float: left;
   width: 14%;
-  margin-right: 24%;
+  padding-right: 14%;
   text-align: right;
 }
+
+.timeline time small {
+  color: lightgrey;
+  font-size: 10pt;
+}
+
+.timeline time big {
+  color: #6CBFEE;
+  font-size: 35pt;
+}
+
+.timeline :nth-child(odd) time big {
+  color: #0393CE;
+}
+
 .timeline time > * {
   display: block;
 }
@@ -142,16 +157,20 @@ main {
 .timeline article {
   display: inline-block;
   float: left;
-  width: 62%;
+  width: 72%;
   box-sizing: border-box;
   color: white;
   background-color: #6CBFEE;
   padding: 2ex 2em;
-  border-radius: 1%;
+  border-radius: 1.5%;
+}
+
+.timeline article::before {
+  border: solid transparent;
 }
 
 .timeline :nth-child(odd) article {
-  background-color: #0393CE
+  background-color: #0393CE;
 }
 
 
@@ -248,8 +267,20 @@ main {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 65.375em) {
+    .timeline time big {
+      font-size: 20pt;
+    }
+}
+
+@media only screen and (max-width: 47.2em) {
+  .timeline article {
+    clear: left;
+    width: 100%;
+  }
+  .timeline li::before {
+    display: none;
+  }
 }
 
 @media print,
