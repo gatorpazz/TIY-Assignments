@@ -96,15 +96,64 @@ textarea {
    ========================================================================== */
 
 /*Put my CSS here*/
-.timeline article {
-  color: white;
-  background-color: #57C0F1;
+main {
+  margin: 0 10em 0 10em;
 }
 
-.timeline li:nth-child(even) article {
-  color: white;
-  background-color: #3593CA;
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.timeline li {
+  padding-bottom: 2ex;
+  position: relative;
+}
+
+.timeline li::before {
+  content: ' ';
+  width: 1ex;
+  top: 0;
+  bottom: 0;
+  background-color: #afdcf8;
+  position: absolute;
+  left: 30%;
+  font-size: 200%;
+}
+
+.timeline li::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.timeline time {
+  display: inline-block;
+  float: left;
+  width: 14%;
+  margin-right: 24%;
+  text-align: right;
+}
+.timeline time > * {
+  display: block;
+}
+
+.timeline article {
+  display: inline-block;
+  float: left;
+  width: 62%;
+  box-sizing: border-box;
+  color: white;
+  background-color: #6CBFEE;
+  padding: 2ex 2em;
+  border-radius: 1%;
+}
+
+.timeline :nth-child(odd) article {
+  background-color: #0393CE
+}
+
 
 
 
