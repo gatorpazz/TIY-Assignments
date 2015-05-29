@@ -165,8 +165,13 @@ main {
   border-radius: 1.5%;
 }
 
-.timeline article::before {
-  border: solid transparent;
+.timeline li article::before {
+  content: '\25c0';
+  position: absolute;
+  display: block;
+  z-index: 1
+  right: 100%;
+  top: 1em;
 }
 
 .timeline :nth-child(odd) article {
