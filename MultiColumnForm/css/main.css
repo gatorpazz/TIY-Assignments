@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -28,7 +30,6 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -53,12 +54,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -95,27 +91,82 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 body {
-  background-color: #47A3DA;
+    background-color: #47A3DA;
+    color: white;
+}
+main {
+    margin: 5em 5em 5em 5em;
+}
+form {
+    position: relative;
+}
+form:before, form:after {
+    content: " ";
+    display: table;
 }
 
+form:after {
+    clear: both;
+}
 
+.submit {
+  clear: both;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.submit button {
+    background-color: #10689A;
+    border: none;
+    padding: 0.5em;
+    position: relative;
+    clear: both;
+    display: inline-block;
+    text-align: center;
+}
+.column {
+    width: 100%;
+    padding: 10px 30px;
+    float: left;
+}
 
+.column label {
+  text-transform: uppercase;
+}
 
+.column label, input, textarea {
+    display: block;
+}
+.column input {
+    border: 2px solid white;
+}
+.column input, select {
+    margin-bottom: 2em;
+    width: 3in;
+    background-color: transparent;
+    padding: 0.5em;
+}
 
+.column select, {
+    border: 2px solid lightgray;
+}
 
-
-
-
-
-
-
+.column textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.5em;
+    width: 3in;
+    margin-bottom: 2em;
+}
+::-webkit-input-placeholder {
+    color: red;
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers:
@@ -147,8 +198,7 @@ body {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -177,12 +227,12 @@ body {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -193,13 +243,35 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 48em) {
+    .column {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+    }
+    .column:nth-child(3) {
+        width: 100%;
+    }
+    .column:nth-child(3) input, select, textarea {
+      width: 100%;
+    }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+@media only screen and (min-width: 70em) {
+  .column {
+    box-sizing: border-box;
+    width: 33%;
+    float: left;
+  }
+  .column:nth-child(3) {
+      width: 33%;
+  }
+  button {
+    clear: both;
+  }
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -210,72 +282,52 @@ body {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
