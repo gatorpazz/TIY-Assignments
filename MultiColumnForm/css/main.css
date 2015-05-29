@@ -137,6 +137,7 @@ form:after {
 
 .column label, input, textarea {
     display: block;
+    width: 100%;
 }
 .column input {
     border: 2px solid white;
@@ -242,7 +243,6 @@ form:after {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 48em) {
     .column {
         box-sizing: border-box;
@@ -252,7 +252,7 @@ form:after {
     .column:nth-child(3) {
         width: 100%;
     }
-    .column:nth-child(3) input, select, textarea {
+    .column input, select, textarea {
       width: 100%;
     }
 }
