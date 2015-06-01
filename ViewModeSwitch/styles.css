@@ -14,6 +14,22 @@ div.cbp-vm-options {
 	margin-right: 20px;
 	margin-left: 20px;
 }
+
+li {
+	list-style: none;
+}
+
+.cbp-vm-view-grid li {
+	width: 32%;
+	display: inline-block;
+}
+
+.cbp-vm-add {
+	text-decoration: none;
+	border: 1px solid cornflowerblue;
+	background-color: violet;
+}
+
 .listButton {
 	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
 	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
