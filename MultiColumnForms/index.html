@@ -15,7 +15,7 @@
 <body>
     <main>
         <form>
-            <div class='column'>
+            <div class='column' id="one">
                 <label for='first name'>First Name</label>
                 <input type='text' id='first name' name='first name' placeholder="Ben">
                 <label for='last name'>Last Name</label>
@@ -32,7 +32,7 @@
                 <label for='bio'>Biography</label>
                 <textarea id='bio' name='bio'></textarea>
             </div>
-            <div class='column'>
+            <div class='column' id="two">
               <label for='phone'>Phone Number</label>
               <input type='tel' id='phone' name='phone' placeholder="867-5309">
               <label for='affil'>Affiliations</label>
@@ -46,9 +46,32 @@
               </select>
               <label for='cat'>Cat's Name</label>
               <input type='text' id='cat' name='cat' placeholder='Meowface'>
-
+              <label for='gadget'>Favorite Gadget</label>
+              <input type='text' id='gadget' name='gadget' placeholder='clapper'>
+            </div>
+            <div class='column' id="three">
+              <label for='talent'>Type of Talent</label>
+              <select id='talent' name='talent'>
+                <option>Choose a talent</option>
+                <option>Picking up chicks</option>
+                <option>Picking up dudes</option>
+                <option>Picking up both</option>
+              </select>
+              <label for='drink'>Favorite Drink</label>
+              <input type='text' id='drink' name='drink' placeholder='drinking'>
+              <label for='power'>Special Power</label>
+              <input type='text' id='power' name='power' placeholder='My good looks'>
+              <label for='weapon'>Weapon of Choice</label>
+              <input type='text' id='weapon' name='weapon' placeholder='My good looks'>
+              <label for='comments'>Comments</label>
+              <textarea id='comments' name='comments'></textarea>
+            </div>
+            <div class='wrapper'>
+              <button name="submitButton">Send Your Data</button>
+            </div>
         </form>
     </main>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 </body>
 
 </html>

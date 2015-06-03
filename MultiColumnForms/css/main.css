@@ -94,11 +94,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  color: white;
+  background-color: black;
+}
 
+main {
+  margin: 3em 3em 3em 3em;
+}
 
+input {
+  padding: .3em;
+}
 
+label, button{
+  text-transform: uppercase;
+}
 
+label, input, button, select, textarea {
+  font-family: "Roboto Condensed";
+}
 
+label, input {
+  display: block;
+  margin-bottom: .5em;
+  width: 100%;
+  background-color: black;
+  font-size: 13pt;
+}
+
+select {
+  margin-bottom: .5em;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  height: 10em;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 3em;
+  clear: both;
+}
+
+button {
+  display: inline-block;
+  background-color: limegreen;
+  clear: both;
+  margin-top: 3em;
+  color: black;
+}
 
 
 
@@ -192,15 +243,41 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  #one {
+    float: left;
+    width: 46%;
+    margin-right: 1em;
+  }
+  #two {
+    float: right;
+    width: 46%;
+    margin-left: 1em;
+  }
+  #three {
+    clear: both;
+  }
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 60em) {
+  #one {
+    display: inline-block;
+    width: 30%;
+    margin-right: 1em;
+  }
+  #two {
+    float: left;
+    width: 30%;
+    margin-left: 1em;
+  }
+  #three {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    margin-left: .5em;
+    clear: none;
+  }
 }
-
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
