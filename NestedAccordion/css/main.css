@@ -99,7 +99,8 @@ body {
 }
 
 main {
-  margin: 5em 19em 5em 19em;
+  margin: 5em 15em 5em 15em;
+  box-sizing: content-box;
 }
 
 h1 {
@@ -118,6 +119,9 @@ ul {
   display: none;
 }
 
+.open {
+  display: block;
+}
 
 
 
