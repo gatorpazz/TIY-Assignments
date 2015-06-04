@@ -94,10 +94,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  background-color: pink;
+}
 
+main {
+  margin: 5em 19em 5em 19em;
+}
 
+h1 {
+  font-family: "Quicksand";
+  border-bottom: 1px solid blue;
+  color: blue;
+  padding-bottom: .8em;
+  margin-top: 1em;
+}
 
+ul {
+  list-style-position: inside;
+}
 
+.content{
+  display: none;
+}
 
 
 
