@@ -96,11 +96,11 @@ textarea {
    ========================================================================== */
 body {
   background-color: pink;
+  margin: auto;
 }
 
 main {
   margin: 5em 15em 5em 15em;
-  box-sizing: content-box;
 }
 
 h1 {
@@ -214,8 +214,10 @@ ul {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 10em) {
+    body {
+      font-size: 10pt;
+    }
 }
 
 @media print,
